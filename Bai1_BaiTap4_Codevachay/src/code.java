@@ -11,7 +11,6 @@ public class code {
             ======================
             """;
         System.out.println(greeting);
-
 	}
 
 }
