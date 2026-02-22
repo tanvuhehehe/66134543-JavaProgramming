@@ -1,19 +1,10 @@
-/**
- * 
- */
-package Bai1;
 
-/**
- * 
- */
+package Bai1;
 public class ThongTinCaNhan {
 
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+		System.out.println("Em tên là: Huỳnh Tấn Vũ ");
+		System.out.println("Mã số sinh viên: 66134543");
 	}
 
 }
