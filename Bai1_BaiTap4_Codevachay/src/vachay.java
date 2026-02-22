@@ -11,5 +11,4 @@ public class vachay {
         System.out.println("Number: " + number);
         System.out.println("List: " + list);
     }
-
 }
