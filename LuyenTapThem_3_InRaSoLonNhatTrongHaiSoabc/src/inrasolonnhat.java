@@ -1,4 +1,4 @@
-/*Cho 2 số nguyên a và b từ bàn phím, in ra số lớn nhất ?
+/*Cho 2 số nguyên a, b và c có sẳn, in ra số lớn nhất ?
 
 Ví dụ
 
