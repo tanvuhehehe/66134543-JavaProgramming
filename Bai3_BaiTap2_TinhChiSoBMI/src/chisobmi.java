@@ -29,6 +29,7 @@ public class chisobmi {
             System.out.println("Phân loại: Béo phì");
         }
 
+        
         scanner.close();
     }
 }
