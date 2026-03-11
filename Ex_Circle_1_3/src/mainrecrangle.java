@@ -2,7 +2,7 @@
 public class mainrecrangle {
 
 	public static void main(String[] args) {
-		Rectangle r1 = new Rectangle(2.2f, 6.4f);
+		Rectangle r1 = new Rectangle(4.2f, 6.4f);
 	    System.out.println(r1);  
 	    Rectangle r2 = new Rectangle();  
 	    System.out.println(r2);
