@@ -23,4 +23,13 @@ public final class Rectangle {
 	public void setWidth(float w) {
 		width = w;
 	}
+	public double getArea() {
+		return length * width;
+	}
+	public double getPerimeter() {
+		return (length + width) * 2;
+	}
+	public String toString() {
+		return "Rectangle [length = " + length + ", width =" + width + "]";
+	}
 }
