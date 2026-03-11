@@ -1,10 +1,10 @@
 
-public class Circle {
+public class circle {
 	private double radius;
-	public Circle() {
+	public circle() {
 		radius = 1.0;
 	}
-	public Circle(double r) {
+	public circle(double r) {
 		radius = r;
 	}
 	
