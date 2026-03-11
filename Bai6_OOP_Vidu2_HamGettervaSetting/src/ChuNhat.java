@@ -18,6 +18,7 @@ public class ChuNhat {
 	double getRong() {
 		return rong;
 	}
+	
 
 	void setDai(double dai) {
 		this.dai = dai;
