@@ -20,4 +20,8 @@ public class LopMayTinh {
 	boolean coTheChoiGame() {
 		return ram >= 8;
 	}
+	
+	double tinhThue() {
+		return gia * 0.1;
+	}
 }
