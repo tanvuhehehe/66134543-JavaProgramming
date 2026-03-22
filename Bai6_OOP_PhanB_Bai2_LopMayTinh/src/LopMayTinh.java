@@ -14,7 +14,7 @@ public class LopMayTinh {
 		System.out.println("Hang: " + hang);
 		System.out.println("Ram: " + ram + " GB");
 		System.out.println("O Cung "+ oCung + " GB");
-		System.out.println("Gia: " + gia);
+		System.out.println("Gia: " + (long)gia);
 	}
 	
 	boolean coTheChoiGame() {
