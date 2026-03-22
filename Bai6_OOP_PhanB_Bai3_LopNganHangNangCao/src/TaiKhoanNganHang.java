@@ -1,8 +1,11 @@
 
-public class LopNganHang {
+public class TaiKhoanNganHang {
+	// thuoc tinh
 	String soTaiKhoan;
     String tenChuTaiKhoan;
     double soDu;
+    
+    // phuong thuc
     
     void guiTien(double soTien) {
     	soDu += soTien;
@@ -18,4 +21,10 @@ public class LopNganHang {
     		return false;
     	}
     }
+    
+    void chuyenTien
 }
+
+
+
+
