@@ -22,7 +22,17 @@ public class TaiKhoanNganHang {
     	}
     }
     
-    void chuyenTien
+    void chuyenTien(TaiKhoanNganHang taiKhoanKhac, double soTien) {
+    	if(rutTien(soTien)) {
+    		taiKhoanKhac.guiTien(soTien);
+    		System.out.println("Chuyen Tien Thanh Cong");
+    	}else {
+            System.out.println("Khong  Du Tien De Chuyen");	
+    	}
+    }
+    void hienSoDu() {
+    	System.out.println("So du: " + soDu);
+    }
 }
 
 
