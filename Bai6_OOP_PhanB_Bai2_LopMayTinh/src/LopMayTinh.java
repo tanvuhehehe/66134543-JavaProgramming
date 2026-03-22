@@ -12,9 +12,12 @@ public class LopMayTinh {
 	
 	void kimTraCauHinh() {
 		System.out.println("Hang: " + hang);
-		System.out.println("Ram: " + ram);
-		System.out.println("O Cung "+ oCung);
+		System.out.println("Ram: " + ram + " GB");
+		System.out.println("O Cung "+ oCung + " GB");
 		System.out.println("Gia: " + gia);
 	}
 	
+	boolean coTheChoiGame() {
+		return ram >= 8;
+	}
 }
