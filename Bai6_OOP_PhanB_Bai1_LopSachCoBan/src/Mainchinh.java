@@ -11,17 +11,26 @@ public class Mainchinh {
 		sach1.soTrang = 300;
 		sach1.hienThiThongTin();
 		
+		
 		System.out.println("\n\n\n");
 		// doi tuong 2
 		hamsach sach2 = new hamsach();
-		sach2.tieuDe = "Lap Trinh Web";
+		sach2.tieuDe = "Thiet Ke Web";
 		sach2.tacGia = "Nguyen Dinh Hoang Son";
 		sach2.Gia = 300000;
 		sach2.soTrang = 400;
 		sach2.hienThiThongTin();
 		
-		// doi tuong 3
 		
+		
+		System.out.println("\n\n\n");
+		// doi tuong 3
+		hamsach sach3= new hamsach();
+		sach3.tieuDe = "Lap Trinh Java";
+		sach3.tacGia = "Mai Cuong Tho";
+		sach3.Gia = 0;
+		sach3.soTrang = 234;
+		sach3.hienThiThongTin();
 
 	}
 
