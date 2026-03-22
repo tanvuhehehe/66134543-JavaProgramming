@@ -8,9 +8,9 @@ public class conmeokeusao {
 	//phuongthuc
 	void HienThongTin() {
 		System.out.println("Ten con meo: " + tenConMeo);
-		System.out.println("Tuoi con Meo: " + tuoiMeo);
+		System.out.println("Tuoi con Meo: " + tuoiMeo + " nam");
 		System.out.println("Mau Long:  " + mauLong);
-		System.out.println("Can Nang: " + canNang);
+		System.out.println("Can Nang: " + canNang + " kg");
 	}
 	void keu() {
 		System.out.println(tenConMeo +" kêu Mèo méo meo mèo meo ");
