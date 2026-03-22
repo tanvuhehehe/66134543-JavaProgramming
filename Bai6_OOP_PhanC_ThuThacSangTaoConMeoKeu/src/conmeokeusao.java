@@ -9,6 +9,10 @@ public class conmeokeusao {
 	void keu() {
 		System.out.println(tenConMeo +" kêu Mèo méo meo mèo meo ");
 	}
-	void an()
-	
+	void an(String thucAn) {
+		System.out.println(ten + " dang an " + thucAn);
+	}
+	void ngu() {
+		System.out.println(ten + " dang ngu");
+	}
 }
