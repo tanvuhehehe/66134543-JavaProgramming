@@ -50,6 +50,7 @@ public class LopSanPham {
 				System.out.println("Ma san pham ko duoc bo trong!")
 			}
 		}
+		
 		public void setgia(double gia) {
 			if(gia > 0) {
 				this.gia = gia;
@@ -57,7 +58,32 @@ public class LopSanPham {
 				System.out.println("Gia phai lon hon khong. Vui long nhap lai !");
 			}
 		}
-		public void setsoLuong
+		
+		public void setsoLuong(int soLuong) {
+			if(soLuong >= 0) {
+				this.soLuong = soLuong;
+			}else {
+				System.out.println("So luong phai >= 0");
+				this.soLuong = 0;
+			}
+		}
+		
+		// tinhThanhTien soluong * gia
+		public double tinhThanhTien() {
+			return gia * soLuong;
+		}
+		
+		
+		// hien thi thong tin phuong thuc
+		
+	    public void hienThiThongTin() {
+	        System.out.println("---Thong Tin San Pham---");
+	        System.out.println("Ma SP: " + maSP);
+	        System.out.println("Ten SP: " + tenSP);
+	        System.out.println("Gia: " + gia);
+	        System.out.println("So Luong: " + soLuong);
+	        System.out.println("Thanh Tien: " + tinhThanhTien());
+	    }
 }
 
 
