@@ -14,5 +14,71 @@ public class LopSanPham {
 			this.soLuong = 0;
 		}
 	// consstructor co tham so
+		public SanPham ( String maSP, String tenSP, double  gia, int soLuong) {
+			this.setmaSP(maSP);
+			this.settenSP(tenSP);
+			this.setgia(gia);
+			this.setsoLuong(soLuong);
+		}
+	// 3. hàm lấy sản phẩm của priveta
+		public String getmaSP{
+			return maSP;
+		}
+		public String gettenSP{
+			return tenSP;
+		}
+		public double getgia{
+			return gia;
+		}
+		public int getsoLuong{
+			return soLuong;
+		}
 		
+	// setter	
+		public void	setmaSP(String maSP) {
+			if(maSP != null) {
+				this.maSP = maSP;
+			}else {
+				System.out.println("Ma san pham ko duoc bo trong!")
+			}
+		}
+		
+		public void settenSP(String tenSP) {
+			if(tenSP != null) {
+				this.tenSP = tenSP;
+			}else {
+				System.out.println("Ma san pham ko duoc bo trong!")
+			}
+		}
+		public void setgia(double gia) {
+			if(gia > 0) {
+				this.gia = gia;
+			}else {
+				System.out.println("Gia phai lon hon khong. Vui long nhap lai !");
+			}
+		}
+		public void setsoLuong
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
