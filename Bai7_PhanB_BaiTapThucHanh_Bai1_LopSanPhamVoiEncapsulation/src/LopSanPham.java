@@ -7,30 +7,30 @@ public class LopSanPham {
 		private int soLuong;
 		
 	// 2. 2 constructor: mặc định và có tham số
-		public SanPham ( String maSP, String tenSP, double  gia, int soLuong) {
+		public LopSanPham () {
 			this.maSP = "1111";
 			this.tenSP = "Chua co ten nha !";
 			this.gia = 0;
 			this.soLuong = 0;
 		}
 	// consstructor co tham so
-		public SanPham ( String maSP, String tenSP, double  gia, int soLuong) {
+		public LopSanPham ( String maSP, String tenSP, double  gia, int soLuong) {
 			this.setmaSP(maSP);
 			this.settenSP(tenSP);
 			this.setgia(gia);
 			this.setsoLuong(soLuong);
 		}
-	// 3. hàm lấy sản phẩm của priveta
-		public String getmaSP{
+	// 3. hàm lấy sản phẩm của private
+		public String getmaSP(){
 			return maSP;
 		}
-		public String gettenSP{
+		public String gettenSP(){
 			return tenSP;
 		}
-		public double getgia{
+		public double getgia(){
 			return gia;
 		}
-		public int getsoLuong{
+		public int getsoLuong(){
 			return soLuong;
 		}
 		
@@ -39,7 +39,7 @@ public class LopSanPham {
 			if(maSP != null) {
 				this.maSP = maSP;
 			}else {
-				System.out.println("Ma san pham ko duoc bo trong!")
+				System.out.println("Ma san pham ko duoc bo trong!");
 			}
 		}
 		
@@ -47,7 +47,7 @@ public class LopSanPham {
 			if(tenSP != null) {
 				this.tenSP = tenSP;
 			}else {
-				System.out.println("Ma san pham ko duoc bo trong!")
+				System.out.println("Ma san pham ko duoc bo trong!");
 			}
 		}
 		
