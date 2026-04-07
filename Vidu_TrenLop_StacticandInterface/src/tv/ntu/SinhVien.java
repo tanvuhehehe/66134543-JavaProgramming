@@ -26,7 +26,6 @@ public class SinhVien {
 		System.out.println("Hellooooooo, I am a NTU student: \nName: " + hoTen + "\nClass: " + lop);
 	}
 	public SinhVien(String hoTen, String lop) {
-
 		this.hoTen = hoTen;
 		this.lop = lop;
 	}
