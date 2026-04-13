@@ -41,10 +41,21 @@ public class NhanVien {
 		this.hoTen = hoTen;
 		this.luongCoBan = luongCoBan;
 	}
-	//
 	
+	//
 	public double tinhLuong() {
 		return luongCoBan;
+	}
+	@Override
+	public String toString() {
+		return "NhanVien [maNV=" + maNV + ", hoTen=" + hoTen + ", luongCoBan=" + luongCoBan + "]";
+	}
+	
+	//
+	public void hienThiThongTin() {
+		System.out.println("Ma NV: " + maNV);
+		System.out.println("Ten NV: " + hoTen);
+		System.out.println("Luong co ban: " + luongCoBan);
 	}
 }
 
