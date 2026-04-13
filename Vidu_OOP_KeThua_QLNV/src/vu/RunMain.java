@@ -7,6 +7,8 @@ public class RunMain {
 		NhanVien nv1 = new NhanVien("66134543", "Huynh Tan Vu", 13500);
 		//nv1.hienThiThongTin();
 		System.out.println(nv1.toString());
+		
+		NhanVienVanPhong nvVanPhong1 = new NhanVienVanPhong();
 	}
 
 }

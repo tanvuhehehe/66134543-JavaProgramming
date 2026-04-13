@@ -46,7 +46,7 @@ public class NhanVien {
 	public double tinhLuong() {
 		return luongCoBan;
 	}
-	
+	@Override
 	public String toString() {
 		String chuoiXuat = "";
 		chuoiXuat = chuoiXuat + "Ma NV: " + this.maNV;
