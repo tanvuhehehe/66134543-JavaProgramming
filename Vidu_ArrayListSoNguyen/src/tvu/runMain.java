@@ -24,10 +24,29 @@ public class runMain {
 		}
 		//b. In ra man hinh day so vua nhap
 		System.out.println("Danh sach vua nhap la: ");
+		
+		System.out.println("Cach 1: ");
 		for(int i = 0; i<ds.size(); i++) {
 			Integer tam = ds.get(i);
 			System.out.print(tam +" ");
 		}
+		System.out.println("Cach 2: \n");
+		for(Integer x: ds) {
+			System.out.print(x + " ");
+		}
+		
+		//c. Dem xem co bao nhieu so chan
+		int tamDem = 0;
+		for(Integer x : ds) {
+			if(x % 2 == 0) tamDem ++; 
+		}
+		System.out.println("\nPhan Tu Chan Trong Mang la: " + tamDem);
+		//d. Tinh tong cac phan tu co trong danh sach
+		int sum = 0;
+		for(Integer x : ds) {
+			sum += x;
+		}
+		System.out.println("Tong cac phan tu la: " + sum);
 	}
 
 }
