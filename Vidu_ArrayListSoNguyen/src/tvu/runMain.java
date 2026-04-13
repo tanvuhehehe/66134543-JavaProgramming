@@ -22,6 +22,12 @@ public class runMain {
 			Integer tam = sc.nextInt();
 			ds.add(tam);
 		}
+		//b. In ra man hinh day so vua nhap
+		System.out.println("Danh sach vua nhap la: ");
+		for(int i = 0; i<ds.size(); i++) {
+			Integer tam = ds.get(i);
+			System.out.print(tam +" ");
+		}
 	}
 
 }
