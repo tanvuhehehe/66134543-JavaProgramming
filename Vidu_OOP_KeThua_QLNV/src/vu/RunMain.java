@@ -8,7 +8,11 @@ public class RunMain {
 		//nv1.hienThiThongTin();
 		System.out.println(nv1.toString());
 		
-		NhanVienVanPhong nvVanPhong1 = new NhanVienVanPhong();
+		System.out.println("=======");
+		//
+		NhanVienVanPhong nvVanPhong1 = new NhanVienVanPhong("113NF","Trần Thị Tươi Lắm" , 3500, 12, 15);
+//		System.out.println(nvVanPhong1.toString());
+		nvVanPhong1.hienThiThongTin();
 	}
 
 }
