@@ -46,9 +46,15 @@ public class NhanVien {
 	public double tinhLuong() {
 		return luongCoBan;
 	}
-	@Override
+	
 	public String toString() {
-		return "NhanVien [maNV=" + maNV + ", hoTen=" + hoTen + ", luongCoBan=" + luongCoBan + "]";
+		String chuoiXuat = "";
+		chuoiXuat = chuoiXuat + "Ma NV: " + this.maNV;
+		chuoiXuat = chuoiXuat + "\nHo ten NV: : " + this.hoTen;
+		chuoiXuat = chuoiXuat + "\nLuong co ban: " + this.luongCoBan;
+		return chuoiXuat;
+		// hai cai nhu nhau
+//		return "NhanVien [maNV=" + maNV + ", hoTen=" + hoTen + ", luongCoBan=" + luongCoBan + "]";
 	}
 	
 	//
