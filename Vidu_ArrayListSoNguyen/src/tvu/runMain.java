@@ -30,7 +30,7 @@ public class runMain {
 			Integer tam = ds.get(i);
 			System.out.print(tam +" ");
 		}
-		System.out.println("Cach 2: \n");
+		System.out.println("\nCach 2: \n");
 		for(Integer x: ds) {
 			System.out.print(x + " ");
 		}
