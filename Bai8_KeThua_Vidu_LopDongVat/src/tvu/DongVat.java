@@ -52,7 +52,7 @@ public class DongVat {
 		System.out.println("Tuoi: " + tuoi + "nam");
 		System.out.println("Can Nang: " + canNang + "kg");
 	}
-}
+}	
 
 
 
