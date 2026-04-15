@@ -14,4 +14,9 @@
 giúp người học nắm vững kiến thức một cách hệ thống.
 
 📖 Tài liệu được sắp xếp từ những phần nhỏ nhất đến các nội dung phức tạp hơn,  
+<<<<<<< HEAD
 có thể sử dụng làm tài liệu tham khảo trong quá trình học tập.
+=======
+có thể sử dụng làm tài liệu tham khảo trong quá trình học tập.
+>>>>>>> 4bc7574cf2f2204c3cdb0dc091e600087f6eacb8
+chào
