@@ -1,3 +1,7 @@
-# 66134543-JavaProgramming
-Lưu các bài thực hành, bài tập, dự án trong học tập Lập Trình Java
-Thầy: Mai Cường Thọ
+|                   |          Chi tiết          |
+|-------------------|----------------------------|
+|      Tác Giả      |    Nguyễn Ngọc Xuân Ánh    |
+|      Liên hệ      | anh.nnx.66cntt@ntu.edu.vn  |
+|     Giảng viên    |       Mai Cường Thọ        |
+|      Ngôn ngữ     |           Java             |
+|     Môi trường    |         Eclipse            |
