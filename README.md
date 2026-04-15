@@ -1,5 +1,5 @@
 |                   |          Chi tiết          |
 |-------------------|----------------------------|
-|     Giảng viên  g |       Mai Cường Thọ        |
+|     Giảng viên |       Mai Cường Thọ        |
 |      Ngôn ngữ     |           Java             |
 |     Ứng dụng      |         Eclipse            |
