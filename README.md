@@ -24,3 +24,9 @@ giúp người học nắm vững kiến thức một cách hệ thống.
 
 ![Anh1](img_duantieubieu/bai1_ha.png)
 
+- **Mục Đích:** Để cho người mới học biết cách in ra màn hình trong `main`
+- **Nội dung:** Đọc được vể cái cơ bản của class `InHinhAnhDonGian`
+
+
+
+
