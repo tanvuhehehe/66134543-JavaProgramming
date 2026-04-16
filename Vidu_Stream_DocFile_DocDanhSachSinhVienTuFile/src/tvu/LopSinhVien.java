@@ -50,7 +50,10 @@ public class LopSinhVien {
 	public void setGioiTinh(String gioiTinh) {
 		this.gioiTinh = gioiTinh;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return   soTT +"      " +  hoTen + "      " +  namSinh  +"         " +  gioiTinh;
+	}
 	
 }
