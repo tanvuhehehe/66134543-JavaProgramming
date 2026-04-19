@@ -80,9 +80,8 @@ public class runMain {
 		//5a. Xoa HS co ten Hoa
 		for(int i = 0; i < N; i++) {
 			HOCSINH hscheck = ds.get(i);
-			if(hscheck.getTenHS() == "Hoa") {
+			if(hscheck.getTenHS().equals("Hoa")) {
 				ds.remove(hscheck);
-				break;
 			}
 		}
 		//5b. Xuat lai ds hoc sinh
