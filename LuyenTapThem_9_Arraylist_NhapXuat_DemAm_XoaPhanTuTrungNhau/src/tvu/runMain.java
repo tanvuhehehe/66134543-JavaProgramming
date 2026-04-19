@@ -29,9 +29,15 @@ public class runMain {
 			Integer tam = ds.get(i);
 			if(tam < 0) cnt1++;
 		}
-		System.out.println("- Dem am: " + cnt1);
+		System.out.println("- Dem am C1: " + cnt1);
+		//cach dem 2: 
+		int cnt2 = 0;
+		for(Integer x : ds) {
+			if(x < 0) cnt2++;
+		}
+		System.out.println("- Dem am C2: " + cnt2);
+		
 	}
-
 }
 
 
