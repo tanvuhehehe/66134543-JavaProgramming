@@ -54,7 +54,7 @@ public class runMain {
 				
 		//cau d: Tinh trung binh cong cua cac phan 
 		//tu chia het cho 3
-		
+		//cach1: 
 		double sum1 = 0;
 		int cntd1 = 0;
 		 
@@ -70,20 +70,20 @@ public class runMain {
 		}else {
 			System.out.println("\td.- TB C1: " + sum1 / cntd1);
 		}
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		//cach 2: 
+		double sum2 = 0;
+		int cntd2 = 0;
+		for(Integer x : ds) {
+			if(x % 3 == 0){
+				cntd2++;
+				sum2+=x;
+			}
+		}
+		if(cntd2 == 0) {
+			System.out.println("\td.--> Khong co pt chia het 3 C2");
+		}else {
+			System.out.println("\td.- TB C2: " + sum1 / cntd2);
+		}
 		
 		//cau e: Xoa tat ca cac phan tu trung nhau ( giu lai xuat hien 1 lan)
 	}
