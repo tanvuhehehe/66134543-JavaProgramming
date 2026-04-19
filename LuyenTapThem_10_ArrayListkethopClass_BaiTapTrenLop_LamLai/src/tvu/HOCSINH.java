@@ -26,5 +26,34 @@ public class HOCSINH {
 	public void setLopHS(String lopHS) {
 		this.lopHS = lopHS;
 	}
+	//constructor
+	public HOCSINH() {
+		
+	}
+	
+	public HOCSINH(String tenHS, double tuoiHS, String lopHS) {
+		super();
+		this.tenHS = tenHS;
+		this.tuoiHS = tuoiHS;
+		this.lopHS = lopHS;
+	}
 	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
