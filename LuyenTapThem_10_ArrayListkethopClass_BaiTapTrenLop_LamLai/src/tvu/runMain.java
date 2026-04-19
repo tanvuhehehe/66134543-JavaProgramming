@@ -57,10 +57,26 @@ public class runMain {
 			
 			ds.add(hsi);
 		}
+		
+		//3b. In ra HOCSINH vua nhap
 		for(HOCSINH hsi : ds) {
 			System.out.println(hsi.toString());
 		}
+		// in cach 2
+//		for(int i = 0; i < N; i++) {
+//			System.out.println(ds.get(i).toString());
+//		}
 		
+		//4a. Bo sung them 1HS moi
+		HOCSINH hs4 = new HOCSINH("LE THI THEM", 20, "love4");
+		ds.add(hs4);
+
+		
+		//5
 	}
 
 }
+
+
+
+
