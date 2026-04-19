@@ -27,6 +27,14 @@ public class runMain {
 		for(Integer x : ds) {
 			System.out.print(x + " ");
 		}
+		// dem xem co bao nhieu phan tu chan
+		int cnt = 0;
+		for(Integer x : ds) {
+			if(x % 2 == 0) {
+				cnt ++;
+			}
+		}
+		System.out.print("\nSo luong phan tu chan: " + cnt);
 	}
 
 }
