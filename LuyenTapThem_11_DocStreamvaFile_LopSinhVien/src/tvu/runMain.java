@@ -18,8 +18,14 @@ public class runMain {
 				break;
 			String[] s = line.split("; "); 
 			SinhVien sv1 = new SinhVien(Integer.parseInt(s[0]), s[1], Integer.parseInt(s[2]), s[3]);
+			ds.add(sv1);
 		}
 		
+		System.out.printf("%-5s %-20s %-10s %-10s\n", "STT", "Họ tên", "Năm sinh", "Giới tính");
+
+		for(SinhVien x : ds) {
+			System.out.println(x.toString());
+		}
 	}
 
 }

@@ -56,8 +56,7 @@ public class SinhVien {
 	}
 	//TOSTRING
 	@Override
-	public String toString() {
-		
-		return "SinhVien [STT=" + STT + ", hoTen=" + hoTen + ", namSinh=" + namSinh + ", gioiTinh=" + gioiTinh + "]";
+	public String toString() {//String format: phương thức tạo định dạng, căn chỉnh độ rộng, dài chuỗi
+	    return String.format("%-5d %-20s %-10d %-10s", STT, hoTen, namSinh, gioiTinh);
 	}
 }
