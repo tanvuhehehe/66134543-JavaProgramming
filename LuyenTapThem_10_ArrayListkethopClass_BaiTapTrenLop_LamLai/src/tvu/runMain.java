@@ -1,5 +1,6 @@
 package tvu;
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class runMain {
@@ -32,6 +33,31 @@ public class runMain {
 		hs3.setTuoiHS(tuoihs3);
 		hs3.setLopHS(lophs3);
 		System.out.print(hs3.toString());
+		
+		//3a. Nhap ds N hoc sinh
+		ArrayList<HOCSINH> ds = new ArrayList<HOCSINH>();
+		System.out.print("Nhap so luong hoc sinh: ");
+		int N = sc.nextInt();
+		
+		sc.nextLine();// xoa cach
+		
+		for(int i = 0; i < N; i++) {
+			HOCSINH hsi = new HOCSINH();
+			System.out.print("- Nhap TenHS -  " + i + " = ");
+			String tenhsi = sc.nextLine();
+			System.out.print("- Nhap TuoiHS - " + i + " = ");
+			double tuoihsi = sc.nextDouble();
+			System.out.print("- Nhap LopHS -  " + i + " = ");
+			sc.nextLine();//xoa enter cua tuoi
+			String lophsi = sc.nextLine();
+			
+			hsi.setTenHS(tenhsi);
+			hsi.setTuoiHS(tuoihsi);
+			hsi.setLopHS(lophsi);
+			
+			ds.add(hsi);
+		}
+		
 	}
 
 }
