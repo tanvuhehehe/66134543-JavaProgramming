@@ -85,6 +85,11 @@ public class runMain {
 				break;
 			}
 		}
+		//5b. Xuat lai ds hoc sinh
+		System.out.println("Danh sach sau khi xoa hoa la: ");
+		for(HOCSINH hsi : ds) {
+			System.out.println(hsi.toString());
+		}
 	}
 
 }
