@@ -29,13 +29,13 @@ public class runMain {
 			Integer tam = ds.get(i);
 			if(tam < 0) cnt1++;
 		}
-		System.out.println("\t- Dem am C1: " + cnt1);
+		System.out.println("\tb.- Dem am C1: " + cnt1);
 		//cach dem 2: 
 		int cnt2 = 0;
 		for(Integer x : ds) {
 			if(x < 0) cnt2++;
 		}
-		System.out.println("\t- Dem am C2: " + cnt2);
+		System.out.println("\tb.- Dem am C2: " + cnt2);
 		
 		//cau c: Tim gia tri lon nhat trong danh sach
 		//cach 1: 
@@ -44,13 +44,32 @@ public class runMain {
 			Integer tam = ds.get(i);
 			if(max1 < tam) max1 = tam;
 		}
-		System.out.println("\t- Max C1: " + max1);
+		System.out.println("\tc.- Max C1: " + max1);
 		//cach 2: 
 		int max2 = ds.get(0);
 		for(Integer x : ds) {
 			if(max2 < x) max2 = x;
 		}
-		System.out.println("\t- Max C2: " + max2);
+		System.out.println("\tc.- Max C2: " + max2);
+				
+		//cau d: Tinh trung binh cong cua cac phan 
+		//tu chia het cho 3
+		
+		double sum1 = 0;
+		int cntd1 = 0;
+		 
+		for(int i = 0; i < n; i++) {
+			Integer tam = ds.get(i);
+			if(tam % 3 == 0) {
+				cntd1++;
+				sum1 += tam;
+			}
+		}
+		if(cntd1 == 0) {
+			System.out.println("\td.--> Khong co pt chia het 3 C1");
+		}else {
+			System.out.println("\td.- TB C1: " + sum1 / cntd1);
+		}
 		
 		
 		
@@ -66,16 +85,6 @@ public class runMain {
 		
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		//cau d: Tinh trung binh cong cua cac phan tu chia het cho 3
 		//cau e: Xoa tat ca cac phan tu trung nhau ( giu lai xuat hien 1 lan)
 	}
 }
