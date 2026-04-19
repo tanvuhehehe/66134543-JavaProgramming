@@ -82,21 +82,33 @@ public class runMain {
 		if(cntd2 == 0) {
 			System.out.println("\td.--> Khong co pt chia het 3 C2");
 		}else {
-			System.out.println("\td.- TB C2: " + sum1 / cntd2);
+			System.out.println("\td.- TB C2: " + sum2 / cntd2);
 		}
 		
 		//cau e: Xoa tat ca cac phan tu trung nhau ( giu lai xuat hien 1 lan)
 		//cach 1: 
-		ArrayList<Integer> kq = new ArrayList<Integer>();
+		ArrayList<Integer> kq1 = new ArrayList<Integer>();
 		for(Integer x:ds) {
-			if(kq.contains(x) == false)
-				kq.add(x);
+			if(kq1.contains(x) == false)
+				kq1.add(x);
 		}
 		System.out.print("\t--> Mang sau xoa trung C1: ");
-		for(Integer x:kq) {
+		for(Integer x:kq1) {
 			System.out.print(x + " ");
 		}
+		//cach 2: 
+		ArrayList<Integer> kq2 = new ArrayList<Integer>();
+		for(int i = 0; i < ds.size(); i++) {
+			Integer tam = ds.get(i);
+			if(kq2.contains(tam) == false)
+				kq2.add(tam);
+		}
 		
+		System.out.print("\n\t--> Mang sau xoa trung C2: ");
+		for(int i = 0; i < kq2.size(); i++) {
+			Integer tam = kq2.get(i);
+			System.out.print(tam + " ");
+		}
 	}
 }
 
