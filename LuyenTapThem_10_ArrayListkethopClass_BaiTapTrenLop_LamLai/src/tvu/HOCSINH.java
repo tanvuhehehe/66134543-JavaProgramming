@@ -38,6 +38,12 @@ public class HOCSINH {
 		this.lopHS = lopHS;
 	}
 	
+	@Override
+	public String toString() {
+		return "HOCSINH [tenHS=" + tenHS + ", tuoiHS=" + tuoiHS + ", lopHS=" + lopHS + "]";
+	}
+	
+	
 }
 
 
