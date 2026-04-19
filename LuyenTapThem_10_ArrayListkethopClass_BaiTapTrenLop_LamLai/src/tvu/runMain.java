@@ -70,12 +70,22 @@ public class runMain {
 		//4a. Bo sung them 1HS moi
 		HOCSINH hs4 = new HOCSINH("LE THI THEM", 20, "love4");
 		ds.add(hs4);
+		
+		//4b. Xuat HOC SINH
 		System.out.println("\nDanh sach sau khi them: ");
 		for(HOCSINH hsi : ds) {
 			System.out.println(hsi.toString());
 		}
 		
-		//5
+		//5a. Xoa HS co ten Hoa
+		for(int i = 0; i < N; i++) {
+			HOCSINH hscheck = ds.get(i);
+			if(hscheck.getTenHS() == "Hoa") {
+				ds.remove(hscheck);
+				break;
+			}
+		}
+		
 	}
 
 }
