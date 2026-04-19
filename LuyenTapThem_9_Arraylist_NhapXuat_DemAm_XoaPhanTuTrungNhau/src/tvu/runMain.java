@@ -86,6 +86,17 @@ public class runMain {
 		}
 		
 		//cau e: Xoa tat ca cac phan tu trung nhau ( giu lai xuat hien 1 lan)
+		//cach 1: 
+		ArrayList<Integer> kq = new ArrayList<Integer>();
+		for(Integer x:ds) {
+			if(kq.contains(x) == false)
+				kq.add(x);
+		}
+		System.out.print("\t--> Mang sau xoa trung C1: ");
+		for(Integer x:kq) {
+			System.out.print(x + " ");
+		}
+		
 	}
 }
 
