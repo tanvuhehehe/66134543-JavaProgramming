@@ -9,11 +9,27 @@ public class runMain {
 		 ArrayList<Integer> ds = new ArrayList<Integer>();
 		 Scanner sc = new Scanner(System.in);
 		 
+		 // nhap danh sach tu ban phim
 		for(int i = 0; i < 10; i++) {
-		 System.out.println("a[" + i + "]");
-		 Integer tam = sc.nextInt(0);
+			 System.out.print("a[" + i + "]= ");
+			 Integer tam = sc.nextInt();
+			 ds.add(tam);
 		}
 		
+		// xuat ban phim
+		System.out.print("- Cac phan tu ban nhap la: ");
+		for(int i = 0; i < 10; i++) {
+			Integer tam = ds.get(i);
+			System.out.print(tam + " ");
+		}
 	}
 
 }
+	
+
+
+
+
+
+
+
