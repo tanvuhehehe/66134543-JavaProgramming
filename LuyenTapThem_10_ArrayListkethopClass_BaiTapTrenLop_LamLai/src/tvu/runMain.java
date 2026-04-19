@@ -36,18 +36,18 @@ public class runMain {
 		
 		//3a. Nhap ds N hoc sinh
 		ArrayList<HOCSINH> ds = new ArrayList<HOCSINH>();
-		System.out.print("Nhap so luong hoc sinh: ");
+		System.out.print("\nNhap so luong hoc sinh: ");
 		int N = sc.nextInt();
 		
 		sc.nextLine();// xoa cach
 		
 		for(int i = 0; i < N; i++) {
 			HOCSINH hsi = new HOCSINH();
-			System.out.print("- Nhap TenHS -  " + i + " = ");
+			System.out.print("- Nhap TenHS " + i + " = ");
 			String tenhsi = sc.nextLine();
-			System.out.print("- Nhap TuoiHS - " + i + " = ");
+			System.out.print("- Nhap TuoiHS " + i + " = ");
 			double tuoihsi = sc.nextDouble();
-			System.out.print("- Nhap LopHS -  " + i + " = ");
+			System.out.print("- Nhap LopHS " + i + " = ");
 			sc.nextLine();//xoa enter cua tuoi
 			String lophsi = sc.nextLine();
 			
@@ -56,6 +56,9 @@ public class runMain {
 			hsi.setLopHS(lophsi);
 			
 			ds.add(hsi);
+		}
+		for(HOCSINH hsi : ds) {
+			System.out.println(hsi.toString());
 		}
 		
 	}
