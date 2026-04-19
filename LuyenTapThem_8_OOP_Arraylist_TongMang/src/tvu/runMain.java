@@ -17,10 +17,15 @@ public class runMain {
 		}
 		
 		// xuat ban phim
-		System.out.print("- Cac phan tu ban nhap la: ");
+		System.out.print("- Cach 1:  ");
 		for(int i = 0; i < 10; i++) {
 			Integer tam = ds.get(i);
 			System.out.print(tam + " ");
+		}	
+		System.out.print("\n- Cach 2:  ");
+
+		for(Integer x : ds) {
+			System.out.print(x + " ");
 		}
 	}
 
