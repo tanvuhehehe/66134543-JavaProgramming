@@ -4,7 +4,14 @@ public class Shape {
 	private String color;
 	private boolean filled;
 	//constructor
-	
+	public Shape() {
+		super();
+	}
+	public Shape(String color, boolean filled) {
+		super();
+		this.color = color;
+		this.filled = filled;
+	}
 	//getter và setter
 	public String getColor() {
 		return color;
@@ -17,6 +24,10 @@ public class Shape {
 	}
 	public void setFilled(boolean filled) {
 		this.filled = filled;
+	}
+	@Override
+	public String toString() {
+		return "Shape [color=" + color + ", filled=" + filled + "]";
 	}
 	
 	
