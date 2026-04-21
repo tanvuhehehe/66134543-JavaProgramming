@@ -1,8 +1,8 @@
 package tvu;
 
 public class Shape {
-	private String color;
-	private boolean filled;
+	private String color ="red";
+	private boolean filled = true;
 	//constructor
 	public Shape() {
 		super();
