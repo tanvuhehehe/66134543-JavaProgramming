@@ -15,7 +15,7 @@ public class Circle extends Shape {
 
 	public Circle(double radius, String color, boolean filled) {
 		super(color, filled);
-		// TODO Auto-generated constructor stub
+		this.radius = radius;
 	}
 	//getter va setter
 	public double getRadius() {
