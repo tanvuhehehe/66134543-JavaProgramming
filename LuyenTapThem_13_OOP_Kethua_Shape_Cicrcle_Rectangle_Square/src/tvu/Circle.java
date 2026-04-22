@@ -1,7 +1,6 @@
 package tvu;
 
 public class Circle extends Shape {
-	private static final double PI = 0;
 	private double radius = 1.0;
 	//constructor
 	public Circle(double radius) {
@@ -39,7 +38,7 @@ public class Circle extends Shape {
 	public String toString() {
 		return "Circle [" + super.toString() + ", radius= " + radius +"]";
 	}
-
+	
 	
 	
 }
