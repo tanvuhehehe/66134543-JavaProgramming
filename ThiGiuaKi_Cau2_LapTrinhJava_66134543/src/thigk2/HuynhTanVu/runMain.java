@@ -1,5 +1,16 @@
-
-
+/* đầu tiên em tạo lớp tên là SanPham
+ * Đầu tiên em tạo lớp SanPham với các thuộc tính mã SP, tên SP, loại SP và số lượng.
+ * Sau đó em viết constructor mặc định và constructor có tham số.
+* Tiếp theo em xây dựng các phương thức getter, setter và toString().
+* Trong hàm main, em khai báo ArrayList để lưu danh sách sản phẩm.
+* Em hardcode tạo 3 đối tượng SanPham và thêm vào danh sách.
+* Em sử dụng vòng lặp for-each để in danh sách ban đầu ra màn hình.
+* Sau đó em dùng Scanner để nhập thông tin một sản phẩm mới từ bàn phím.
+* Em tạo đối tượng SanPham mới từ dữ liệu vừa nhập và thêm vào danh sách.
+* Em in lại toàn bộ danh sách sản phẩm sau khi đã thêm mới.
+* Cuối cùng em duyệt danh sách và lọc các sản phẩm có loại “thực phẩm chức năng” để in ra màn hình.
+ * 
+ * */
 package thigk2.HuynhTanVu;
 
 import java.util.ArrayList;
