@@ -1,3 +1,5 @@
+
+
 package thigk2.HuynhTanVu;
 
 import java.util.ArrayList;
@@ -23,7 +25,7 @@ public class runMain {
         for (SanPham sp : ds) {
             System.out.println(sp);
         }
-        // cau b: 
+        // THÊM MỚI 1 SẢN PHẨM 
         
         Scanner sc = new Scanner(System.in);
 
@@ -42,8 +44,23 @@ public class runMain {
 
         // tạo thêm đối tượng thêm yêu cầu 
         SanPham sanPham4 = new SanPham(ma, ten, loai, sl);
+        ds.add(sanPham4);
         // xuất sản phẩm 4
         System.out.println("San Pham 4: " + sanPham4.toString());
+        //  IN RA LẠI TẤT CẢ SẢN PHẨM
+        System.out.println("\nDanh sach san pham sau khi them:");
+        for (SanPham sp : ds) {
+            System.out.println(sp);
+        }
+        
+        // In ra màn hình các danh sách có tên là thực phẩm chúc năng
+        System.out.println("\nDanh sach san pham loai 'thuc pham chuc nang':");
+        for (SanPham sp : ds) {
+            if (sp.getLoaiSP().equalsIgnoreCase("thuc pham chuc nang")) {
+                System.out.println(sp);
+            }
+        }
+        
 	}
 
 }
