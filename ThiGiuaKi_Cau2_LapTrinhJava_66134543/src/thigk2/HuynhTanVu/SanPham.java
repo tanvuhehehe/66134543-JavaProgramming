@@ -47,6 +47,12 @@ public class SanPham {
 		this.soLuong = soLuong;
 	}
 
-	
+	@Override
+	public String toString() {
+		return "SanPham [maSP=" + maSP + 
+	               ", tenSP=" + tenSP + 
+	               ", loaiSP=" + loaiSP + 
+	               ", soLuong=" + soLuong + "]";
+	}
 	
 }
