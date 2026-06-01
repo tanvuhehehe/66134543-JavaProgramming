@@ -1,6 +1,7 @@
 package application;
 	
 import javafx.application.Application;
+import javafx.geometry.Insets;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
@@ -34,12 +35,7 @@ public class Main extends Application {
 		tf2.setPrefWidth(250);
 		lb1.setStyle("-fx-font-size: 14px; -fx-font-weight: bold;");
 		lb2.setStyle("-fx-font-size: 14px; -fx-font-weight: bold;");
-		
-		title.setStyle(
-			    "-fx-font-size: 20px; " +
-			    "-fx-font-weight: bold; " +
-			    "-fx-text-fill: blue;"
-			);
+		hangdoc1.setPadding(new Insets(20));
 		// Them do hang
 		HBox hangngang1 = new HBox(10);
 		HBox hangngang2 = new HBox(10);
@@ -49,8 +45,20 @@ public class Main extends Application {
 		
 		Button btn1 = new Button("Them");
 		Button btn2 = new Button("Xoa");
-//		btn1.setStyle("-fx-background-color: green; -fx-text-fill: white;");
-//		btn2.setStyle("-fx-background-color: red; -fx-text-fill: white;");
+		btn1.setStyle(
+			    "-fx-background-color: #4CAF50; " +
+			    "-fx-text-fill: white; " +
+			    "-fx-font-weight: bold;"
+			);
+
+			btn2.setStyle(
+			    "-fx-background-color: #F44336; " +
+			    "-fx-text-fill: white; " +
+			    "-fx-font-weight: bold;"
+			);
+
+			btn1.setPrefWidth(100);
+			btn2.setPrefWidth(100);
 		HBox hangngang3 = new HBox(10);
 		hangngang3.getChildren().addAll(btn1, btn2);
 		
