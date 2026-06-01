@@ -36,6 +36,11 @@ public class Main extends Application {
 		lb1.setStyle("-fx-font-size: 14px; -fx-font-weight: bold;");
 		lb2.setStyle("-fx-font-size: 14px; -fx-font-weight: bold;");
 		hangdoc1.setPadding(new Insets(20));
+		title.setStyle(
+			    "-fx-font-size: 20px; " +
+			    "-fx-font-weight: bold; " +
+			    "-fx-text-fill: blue;"
+			);
 		// Them do hang
 		HBox hangngang1 = new HBox(10);
 		HBox hangngang2 = new HBox(10);
@@ -43,8 +48,8 @@ public class Main extends Application {
 		hangngang1.getChildren().addAll(lb1, tf1);
 		hangngang2.getChildren().addAll(lb2, tf2);
 		
-		Button btn1 = new Button("+Them");
-		Button btn2 = new Button("-Xoa");
+		Button btn1 = new Button("+ Them");
+		Button btn2 = new Button("- Xoa");
 		btn1.setStyle(
 			    "-fx-background-color: #4CAF50; " +
 			    "-fx-text-fill: white; " +
@@ -63,9 +68,13 @@ public class Main extends Application {
 		hangngang3.getChildren().addAll(btn1, btn2);
 		
 	
-		
+		Label lbDanhSach = new Label("DANH SACH SINH VIEN");
+		lbDanhSach.setStyle(
+			"-fx-font-size: 16px; " +
+			"-fx-font-weight: bold;"
+		);
 		ListView<String> list = new ListView<>();
-		
+		list.setPrefHeight(250);
 		btn1.setOnAction(e -> {
 			
 			if(tf1.getText().trim().isEmpty() || tf1.getText().trim().isEmpty()) {
@@ -87,7 +96,7 @@ public class Main extends Application {
 			list.getItems().remove(hangdangchonxoa);
 		});
 		
-		hangdoc1.getChildren().addAll(title, hangngang1, hangngang2, hangngang3,list);
+		hangdoc1.getChildren().addAll(title, hangngang1, hangngang2, hangngang3,lbDanhSach,list);
 		// tao cua so nhin
 		Scene scn = new Scene(hangdoc1, 500, 500);
 		primaryStage.setTitle("Quan Ly Sinh Vien");
