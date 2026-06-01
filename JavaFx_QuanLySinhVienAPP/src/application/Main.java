@@ -43,8 +43,8 @@ public class Main extends Application {
 		hangngang1.getChildren().addAll(lb1, tf1);
 		hangngang2.getChildren().addAll(lb2, tf2);
 		
-		Button btn1 = new Button("Them");
-		Button btn2 = new Button("Xoa");
+		Button btn1 = new Button("+Them");
+		Button btn2 = new Button("-Xoa");
 		btn1.setStyle(
 			    "-fx-background-color: #4CAF50; " +
 			    "-fx-text-fill: white; " +
