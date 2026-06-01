@@ -95,7 +95,10 @@ public class Main extends Application {
 			String hangdangchonxoa = list.getSelectionModel().getSelectedItem();
 			list.getItems().remove(hangdangchonxoa);
 		});
-		
+		list.setStyle(
+				"-fx-border-color: lightgray; " +
+				"-fx-border-radius: 5;"
+			);
 		hangdoc1.getChildren().addAll(title, hangngang1, hangngang2, hangngang3,lbDanhSach,list);
 		// tao cua so nhin
 		Scene scn = new Scene(hangdoc1, 500, 500);
