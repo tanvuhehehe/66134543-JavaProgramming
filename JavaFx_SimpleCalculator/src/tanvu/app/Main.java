@@ -39,51 +39,44 @@ public class Main extends Application {
 		vb1.getChildren().addAll(title, hb1, vb2);
 		
 		btn1.setOnAction(e -> {
-		    tf3.setText(String.valueOf(
-		        Double.parseDouble(tf1.getText()) + Double.parseDouble(tf2.getText())
-		    ));
+		    try {
+		        double a = Double.parseDouble(tf1.getText());
+		        double b = Double.parseDouble(tf2.getText());
+
+		        double kq = a + b;
+
+		        tf3.setText(String.valueOf(kq));
+		    } catch (Exception ex) {
+		        tf3.setText("ERROR");
+		    }
 		});
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+
 		btn2.setOnAction(e -> {
-		    double a = Double.parseDouble(tf1.getText());
-		    double b = Double.parseDouble(tf2.getText());
-		    double kq = a - b;
-		    tf3.setText(String.valueOf(kq));
+		    try {
+		        double a = Double.parseDouble(tf1.getText());
+		        double b = Double.parseDouble(tf2.getText());
+
+		        double kq = a - b;
+
+		        tf3.setText(String.valueOf(kq));
+		    } catch (Exception ex) {
+		        tf3.setText("ERROR");
+		    }
 		});
+
 		btn3.setOnAction(e -> {
 		    try {
 		        double a = Double.parseDouble(tf1.getText());
 		        double b = Double.parseDouble(tf2.getText());
 
-		        tf3.setText(String.valueOf(a * b));
+		        double kq = a * b;
+
+		        tf3.setText(String.valueOf(kq));
 		    } catch (Exception ex) {
 		        tf3.setText("ERROR");
 		    }
 		});
-		
+
 		btn4.setOnAction(e -> {
 		    try {
 		        double a = Double.parseDouble(tf1.getText());
@@ -92,7 +85,8 @@ public class Main extends Application {
 		        if (b == 0) {
 		            tf3.setText("Khong chia duoc cho 0");
 		        } else {
-		            tf3.setText(String.valueOf(a / b));
+		            double kq = a / b;
+		            tf3.setText(String.valueOf(kq));
 		        }
 		    } catch (Exception ex) {
 		        tf3.setText("ERROR");
