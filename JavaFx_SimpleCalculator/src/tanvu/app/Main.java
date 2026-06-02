@@ -5,7 +5,9 @@ package tanvu.app;
 import javafx.application.Application;
 import javafx.stage.Stage;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.DialogPane;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
@@ -78,20 +80,98 @@ public class Main extends Application {
 		});
 
 		btn4.setOnAction(e -> {
-		    try {
-		        double a = Double.parseDouble(tf1.getText());
-		        double b = Double.parseDouble(tf2.getText());
+		    double a = Double.parseDouble(tf1.getText());
+		    double b = Double.parseDouble(tf2.getText());
 
-		        if (b == 0) {
-		            tf3.setText("Khong chia duoc cho 0");
-		        } else {
-		            double kq = a / b;
-		            tf3.setText(String.valueOf(kq));
-		        }
-		    } catch (Exception ex) {
-		        tf3.setText("ERROR");
+		    if (b == 0) {
+		    	Alert alert = new Alert(Alert.AlertType.ERROR);
+
+		    	alert.setTitle("💀 ERROR");
+		    	alert.setHeaderText("🚫 KHÔNG THỂ CHIA CHO 0");
+		    	alert.setContentText("Vui lòng nhập Number 2 khác 0!");
+
+		    	DialogPane dp = alert.getDialogPane();
+
+		    	dp.setStyle(
+		    	    "-fx-background-color: linear-gradient(to bottom, #ff9a9e, #fad0c4);" +
+		    	    "-fx-font-size: 14px;" +
+		    	    "-fx-font-weight: bold;"
+		    	);
+
+		    	alert.showAndWait();
+		    } else {
+		        tf3.setText(String.valueOf(a / b));
 		    }
 		});
+		//design
+		title.setStyle(
+			    "-fx-font-size: 24px;" +
+			    "-fx-font-weight: bold;" +
+			    "-fx-text-fill: #2C3E50;"
+			);
+
+			vb1.setStyle(
+			    "-fx-background-color: #F5F5F5;" +
+			    "-fx-padding: 30;"
+			);
+
+			hb1.setStyle(
+			    "-fx-alignment: center;"
+			);
+
+			vb2.setStyle(
+			    "-fx-alignment: center;"
+			);
+
+			tf1.setStyle(
+			    "-fx-font-size: 14px;" +
+			    "-fx-background-radius: 10;" +
+			    "-fx-border-radius: 10;"
+			);
+
+			tf2.setStyle(
+			    "-fx-font-size: 14px;" +
+			    "-fx-background-radius: 10;" +
+			    "-fx-border-radius: 10;"
+			);
+
+			tf3.setStyle(
+			    "-fx-font-size: 14px;" +
+			    "-fx-background-radius: 10;" +
+			    "-fx-border-radius: 10;" +
+			    "-fx-font-weight: bold;"
+			);
+			btn1.setStyle(
+				    "-fx-background-color: #4CAF50;" +
+				    "-fx-text-fill: white;" +
+				    "-fx-font-size: 16px;" +
+				    "-fx-font-weight: bold;" +
+				    "-fx-background-radius: 10;"
+				);
+
+				btn2.setStyle(
+				    "-fx-background-color: #F44336;" +
+				    "-fx-text-fill: white;" +
+				    "-fx-font-size: 16px;" +
+				    "-fx-font-weight: bold;" +
+				    "-fx-background-radius: 10;"
+				);
+
+				btn3.setStyle(
+				    "-fx-background-color: #2196F3;" +
+				    "-fx-text-fill: white;" +
+				    "-fx-font-size: 16px;" +
+				    "-fx-font-weight: bold;" +
+				    "-fx-background-radius: 10;"
+				);
+
+				btn4.setStyle(
+				    "-fx-background-color: #FF9800;" +
+				    "-fx-text-fill: white;" +
+				    "-fx-font-size: 16px;" +
+				    "-fx-font-weight: bold;" +
+				    "-fx-background-radius: 10;"
+				);
 		//màn hình
 		Scene scn = new Scene(vb1, 1000, 500);
 		primaryStage.setTitle("Simple Calculator ");
