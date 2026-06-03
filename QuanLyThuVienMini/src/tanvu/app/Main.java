@@ -10,7 +10,7 @@ public class Main extends Application {
 	@Override
 	public void start(Stage primaryStage) {
 		LoginView lg = new LoginView();
-		primaryStage.setTitle("Simple Calculator ");
+		primaryStage.setTitle("Đăng nhập");
 		primaryStage.setScene(lg.createScene(primaryStage));
 		primaryStage.show();
 	}
