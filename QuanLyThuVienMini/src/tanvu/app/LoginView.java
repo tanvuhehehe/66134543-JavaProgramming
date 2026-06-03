@@ -1,35 +1,50 @@
 package tanvu.app;
 
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
+import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class LoginView {
 
 	public Scene createScene(Stage primaryStage) {
 		HBox root = new HBox(10);
-		
+		VBox vb1 = new VBox(10);
 		Image img1 = new Image("file:htvimg/logo.jpg");
 		ImageView imgv1 = new ImageView(img1);
 		imgv1.setFitHeight(150);
 		imgv1.setFitWidth(150);
 		
-		root.getChildren().addAll(imgv1);
 		Label lb1 = new Label("ĐĂNG NHẬP HỆ THỐNG");
 		Label lb2  = new Label("Tên đăng nhập: ");
+		TextField tf1 = new TextField();
+		Label lb3 = new Label("Mật khẩu: ");
 		PasswordField pw1 = new PasswordField();
+		GridPane gp = new GridPane();
+		gp.add(lb2, 0, 0);
+		gp.add(tf1, 1, 0);
+		gp.add(lb3, 0, 1);
+		gp.add(pw1, 1, 1);
 		
 		
 		
+		Button btn = new Button("Đăng Nhập");
 		
+		vb1.getChildren().addAll(lb1, gp, btn);
+		root.getChildren().addAll(imgv1, vb1);
 		
-		
-		
-		return new Scene(root, 700, 500);
+		//Design
+		gp.setHgap(40);
+		gp.setVgap(10);
+		lb1.setStyle("-fx-font-weight: bold");
+		return new Scene(root, 600, 300);
 	}
 
 }
