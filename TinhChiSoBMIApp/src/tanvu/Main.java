@@ -16,6 +16,7 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) {
 
+    	
         VBox root = new VBox(15);
 
         Label title = new Label("TÍNH CHỈ SỐ BMI");
