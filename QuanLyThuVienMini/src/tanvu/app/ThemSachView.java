@@ -16,7 +16,6 @@ import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
 public class ThemSachView {
-
     public Scene createScene(Stage primaryStage) {
 
         VBox root = new VBox(20);
