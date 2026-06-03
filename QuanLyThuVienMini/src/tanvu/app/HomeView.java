@@ -37,7 +37,7 @@ public class HomeView {
                 "-fx-font-weight: bold;" +
                 "-fx-text-fill: #0D47A1;"
         );
-
+        
         btnThem.setPrefSize(150, 80);
         btnDS.setPrefSize(150, 80);
         btnLogout.setPrefSize(150, 80);
@@ -60,14 +60,13 @@ public class HomeView {
         // Sự kiện Đăng xuất
         btnLogout.setOnAction(e -> {
             LoginView lg = new LoginView();
-
             primaryStage.setTitle("Đăng nhập");
             primaryStage.setScene(lg.createScene(primaryStage));
         });
 
         // Chưa làm
         btnThem.setOnAction(e -> {
-
+        	
         });
 
         btnDS.setOnAction(e -> {
