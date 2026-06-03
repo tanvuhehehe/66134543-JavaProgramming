@@ -1,5 +1,7 @@
 package tanvu.app;
 
+import javafx.geometry.Insets;
+import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
@@ -41,9 +43,20 @@ public class LoginView {
 		root.getChildren().addAll(imgv1, vb1);
 		
 		//Design
-		gp.setHgap(40);
+		gp.setHgap(30);
 		gp.setVgap(10);
-		lb1.setStyle("-fx-font-weight: bold");
+		lb1.setStyle("-fx-font-weight: bold;-fx-font-size: 27px;-fx-text-fill: blue");
+		lb2.setStyle("-fx-font-weight: bold");
+		lb3.setStyle("-fx-font-weight: bold");
+		vb1.setPadding(new Insets(10));
+		btn.setStyle(
+			    "-fx-background-color: #2196F3;" +
+			    "-fx-text-fill: white;" +
+			    "-fx-font-weight: bold;" +
+			    "-fx-background-radius: 10;"
+			);
+		tf1.setPrefWidth(190);
+		pw1.setPrefWidth(190);
 		return new Scene(root, 600, 300);
 	}
 
