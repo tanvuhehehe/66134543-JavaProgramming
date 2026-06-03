@@ -53,7 +53,7 @@ public class LoginView {
 					alert1.setContentText("Thông tin đăng nhập không hợp lệ !!!");
 					alert1.showAndWait();
 					return;
-			}
+			}	
 		});
 		//Design
 		gp.setHgap(30);
@@ -63,10 +63,7 @@ public class LoginView {
 		lb3.setStyle("-fx-font-weight: bold");	
 		vb1.setPadding(new Insets(10));
 		btn.setStyle(
-			    "-fx-background-color: blue;" +
-			    "-fx-text-fill: white;" +
-			    "-fx-font-weight: bold;" +
-			    "-fx-background-radius: 10;"
+			    "-fx-background-color: blue;" + "-fx-text-fill: white;" +"-fx-font-weight: bold;" + "-fx-background-radius: 10;"
 			);
 		tf1.setPrefWidth(190);
 		pw1.setPrefWidth(190);
