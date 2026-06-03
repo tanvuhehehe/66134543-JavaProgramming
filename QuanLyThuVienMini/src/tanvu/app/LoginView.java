@@ -45,9 +45,9 @@ public class LoginView {
 		//Sự kiện
 		btn.setOnAction(e ->{
 			if(tf1.getText().equals("admin") && pw1.getText().equals("123")) {
-				HomeView lg = new HomeView();
+				HomeView hv = new HomeView();
 				primaryStage.setTitle("Trang chủ");
-				primaryStage.setScene(lg.createScene(primaryStage));
+				primaryStage.setScene(hv.createScene(primaryStage));
 			}else {
 					Alert alert1 = new Alert(Alert.AlertType.ERROR);
 					alert1.setContentText("Thông tin đăng nhập không hợp lệ !!!");

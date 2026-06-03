@@ -66,11 +66,13 @@ public class HomeView {
 
         // Chưa làm
         btnThem.setOnAction(e -> {
-        	
+            ThemSachView ts = new ThemSachView();
+            primaryStage.setScene(ts.createScene(primaryStage));
         });
 
         btnDS.setOnAction(e -> {
-
+            DanhSachSachView ds = new DanhSachSachView();
+            primaryStage.setScene(ds.createScene(primaryStage));
         });
 
         return new Scene(root, 700, 400);
