@@ -3,6 +3,7 @@ package tanvu.app;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
@@ -41,16 +42,28 @@ public class LoginView {
 		
 		vb1.getChildren().addAll(lb1, gp, btn);
 		root.getChildren().addAll(imgv1, vb1);
-		
+		//Sự kiện
+		btn.setOnAction(e ->{
+			if(tf1.getText().equals("admin") && pw1.getText().equals("123")) {
+				HomeView lg = new HomeView();
+				primaryStage.setTitle("Trang chủ");
+				primaryStage.setScene(lg.createScene(primaryStage));
+			}else {
+					Alert alert1 = new Alert(Alert.AlertType.ERROR);
+					alert1.setContentText("Thông tin đăng nhập không hợp lệ !!!");
+					alert1.showAndWait();
+					return;
+			}
+		});
 		//Design
 		gp.setHgap(30);
 		gp.setVgap(10);
 		lb1.setStyle("-fx-font-weight: bold;-fx-font-size: 27px;-fx-text-fill: blue");
 		lb2.setStyle("-fx-font-weight: bold");
-		lb3.setStyle("-fx-font-weight: bold");
+		lb3.setStyle("-fx-font-weight: bold");	
 		vb1.setPadding(new Insets(10));
 		btn.setStyle(
-			    "-fx-background-color: #2196F3;" +
+			    "-fx-background-color: blue;" +
 			    "-fx-text-fill: white;" +
 			    "-fx-font-weight: bold;" +
 			    "-fx-background-radius: 10;"
