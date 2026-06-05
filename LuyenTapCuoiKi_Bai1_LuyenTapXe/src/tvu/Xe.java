@@ -67,13 +67,15 @@ public class Xe {
 	}
 	// ban
 	public double tinhGiaBan() {
-		if() {
-			
-		}
-		return giaSan;
-		
+	    int soNam = LocalDate.now().getYear() - ngaySanXuat.getYear();
+	    if (soNam > 2) {
+	        return giaSan * 1.15;
+	    } else if (soNam > 1) {
+	        return giaSan * 1.3;
+	    } else {
+	        return giaSan * 1.5;
+	    }
 	}
-	
 	
 	
 	
