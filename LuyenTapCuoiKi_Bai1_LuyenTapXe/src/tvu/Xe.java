@@ -82,8 +82,7 @@ public class Xe {
 	//to string
 	@Override
 	public String toString() {
-		return "Xe [dongXe=" + dongXe + ", soChoNgoi=" + soChoNgoi + ", ngaySanXuat=" + ngaySanXuat + ", giaSan="
-				+ giaSan + "]";
+		return "Xe [dongXe=" + dongXe + ", soChoNgoi=" + soChoNgoi + ", ngaySanXuat=" + ngaySanXuat + ", giaSan=" + giaSan + "]";
 	}
 	
 	
