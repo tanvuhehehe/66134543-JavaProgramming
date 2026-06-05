@@ -87,6 +87,57 @@ public class runMain {
 		for(XeVINFAST x:ds) {
 			System.out.println(x.toString());
 		}
+		
+		// them 1 xe vao danh sach bat ki
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Nhap vi tri p: ");
+		int p = sc.nextInt();
+		sc.nextLine();
+		
+		XeVINFAST xeMoi = new XeVINFAST();
+		xeMoi.nhap();
+		
+		if(p >= 0 && p <= ds.size()) {
+		    ds.add(p, xeMoi);
+		} else {
+		    System.out.println("Vi tri khong hop le!");
+		}
+		// xuat sau khi them
+		System.out.println("\n===== DANH SACH SAU KHI THEM =====");
+		for(XeVINFAST x : ds) {
+		    System.out.println(x);
+		}
+		
+		// nhap xe can xoa
+		System.out.print("Nhap dong xe can xoa: ");
+		String x = sc.nextLine();
+
+		ds.removeIf(xe -> xe.getDongXe().equalsIgnoreCase(x));
+		// xuat lai
+		System.out.println("\n===== DANH SACH SAU KHI XOA =====");
+
+		for(XeVINFAST xe : ds) {
+		    System.out.println(xe);
+		}
+		
+//		// nhap dong xe can xoa cach 2
+//		System.out.print("Nhap dong xe can xoa: ");
+//		String x = sc.nextLine();
+//
+//		// xoa
+//		for(int i = ds.size() - 1; i >= 0; i--) {
+//
+//		    if(ds.get(i).getDongXe().equalsIgnoreCase(x)) {
+//		        ds.remove(i);
+//		    }
+//		}
+//
+//		// xuat lai
+//		System.out.println("\n===== DANH SACH SAU KHI XOA =====");
+//
+//		for(XeVINFAST xe : ds) {
+//		    System.out.println(xe);
+//		}
 	}
 
 }
